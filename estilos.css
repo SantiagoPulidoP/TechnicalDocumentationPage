@@ -56,11 +56,13 @@ body{
 #main-doc{
       
     margin-left: 270px;
+   
 
 }
 
 p{
     margin-left: 10px;
+    padding-right: 15px;
 }
 
 
