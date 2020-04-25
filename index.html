@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <title>Python Documentation</title>
 </head>
@@ -99,14 +100,12 @@
                         <ul>
                             <li>Un número entero puede ser decimal, octal o hexadecimal.                                                       
                             </li>
-                            <br>
-
                             <code>
-                                1, 23, 3493          # Decimales <br>
-                                01, 027, 06645       # Octales  <br>
-                                0x1, 0x17, 0xDA5     # Hexadecimales <br>
+                                1, 23, 3493          # Decimales 
+                                01, 027, 06645       # Octales  
+                                0x1, 0x17, 0xDA5     # Hexadecimales 
                             </code>
-                            <br>
+                            
 
                             <li>En Python no es necesario distinguir entre enteros simples y enteros largos, pues él ya realiza el cambio cuando es necesario.
                                 Así y todo, sí podemos indicar con la letra L que va a ser un entero largo:</li>
@@ -114,9 +113,9 @@
                                 <br>
 
                         <code>
-                            1L, 23L, 3493L          # Decimales largos <br>
-                            01L, 027L, 06645L       # Octales largos <br>
-                            0x1L, 0x17L, 0xDA5L     # Hexadecimales largos  <br>
+                            1L, 23L, 3493L          # Decimales largos 
+                            01L, 027L, 06645L       # Octales largos 
+                            0x1L, 0x17L, 0xDA5L     # Hexadecimales largos  
                         </code>
                         <br>
 
@@ -133,10 +132,10 @@
                             <li>
                                 En Python los decimales se indican con el dígito . (punto), una parte exponencial (con e o E) o ambos.
                             </li>
-                            <br>
+                            
                             <code>
-                                0., 0.0, .0 <br>
-                                1.0, 1.e0, 1.0e0 <br>
+                                0., 0.0, .0 
+                                1.0, 1.e0, 1.0e0 
                             </code>
                         </ul>
                     </article>
@@ -165,9 +164,9 @@
                         <p>El intérprete de Python tiene incorporadas distintas funciones relacionadas con las cadenas. Una de ellas es la función len(), que nos indica el número de elementos de un objeto. En el caso de que el objeto sea una cadena nos indica el número de caracteres que la componen.</p>
                         <br>
                         <code>
-                            >>> cadena = "Programa en Python" <br>
-                            >>> len(cadena) <br>
-                            18 <br>
+                            >>> cadena = "Programa en Python"
+                            >>> len(cadena) 
+                            18 
                         </code>
                     </article>
                     
@@ -178,10 +177,10 @@
                     <article>
                         <p>En Python, una tupla es un conjunto ordenado e inmutable de elementos del mismo o diferente tipo.
                         Las tuplas se representan escribiendo los elementos entre paréntesis y separados por comas.</p>
-                        <br>
+                        
                         <code>
-                            >>> (1, "a", 3.14) <br>
-                            (1, 'a', 3.14) <br>
+                            >>> (1, "a", 3.14)
+                            (1, 'a', 3.14)
                         </code>
                     </article>
 
@@ -196,20 +195,20 @@
 
                         <p>Las listas son secuencias de elementos de cualquier tipo separados por comas. Para escribirlas
                         se utiliza una secuencia de expresiones separadas por comas entre corchetes:</p>
-                        <br>
+                        
                         <code>
-                            >>> s=[1,1+1,6/2] <br>
-                            >>> s <br>
-                            [1, 2, 3] <br>
+                            >>> s=[1,1+1,6/2] 
+                            >>> s 
+                            [1, 2, 3]
                         </code>
                         <p>Mediante la notación para subsecuencias, es posible acceder a elementos individuales de la lista o
                         partes de ella:</p>
                         <code>
-                            >>> s=[1,2,3] <br>
-                            >>> s[1] <br>
-                            2 <br>
-                            >>> s[1:-1] <br>
-                            [2] <br>
+                            >>> s=[1,2,3] 
+                            >>> s[1] 
+                            2 
+                            >>> s[1:-1] 
+                            [2] 
     
                         </code>
                     </article>
@@ -228,13 +227,13 @@
                         </p>
 
                         <code>
-                            >>>tel={} <br>
-                            >>>tel["luis"]=1234 <br>
-                            >>>tel["maria"]=3456 <br>
-                            >>>tel["pepe"]=2323 <br>
-                            >>> print tel["maria"] <br>
-                            3456 <br>
-                            >>> tel <br>
+                            >>>tel={} 
+                            >>>tel["luis"]=1234
+                            >>>tel["maria"]=3456 
+                            >>>tel["pepe"]=2323 
+                            >>> print tel["maria"] 
+                            3456 
+                            >>> tel 
                             {’luis’: 1234, ’pepe’: 2323, ’maria’: 3456}
                         </code>
 
@@ -244,12 +243,12 @@
                         diccionario.</p>
 
                         <code>
-                            >>> tel.has_key("pepe") <br>
-                            True <br>
-                            >>> tel.has_key("antonio")  <br>
-                            False <br>
-                            >>> tel.keys() <br>
-                            [’luis’, ’pepe’, ’maria’] <br>
+                            >>> tel.has_key("pepe") 
+                            True 
+                            >>> tel.has_key("antonio") 
+                            False 
+                            >>> tel.keys() 
+                            [’luis’, ’pepe’, ’maria’]
                         </code>
 
                         <p>Otra alternativa es utilizar get. Este método recibe dos parámetros: el primero es la clave que
@@ -257,20 +256,20 @@
                         especifica el segundo parámetro, el valor devuelto al no encontrar la clave es None.</p>
 
                         <code>
-                            >>> tel.get(’maria’, 0) <br>
-                            3456 <br>
+                            >>> tel.get(’maria’, 0) 
+                            3456 
                             >>> tel.get(’ines’, 0)
-                            0 <br>
+                            0 
                             >>> tel.get(’maria’)
-                            3456 <br>
-                            >>> print tel.get(’ines’) <br>
+                            3456 
+                            >>> print tel.get(’ines’) 
                             None
                         </code>
 
 
                     </article>
 
-                |
+                
                     
                 </section>
 
@@ -280,7 +279,7 @@
                         <p>Para escribir programas útiles, casi siempre necesitamos la capacidad de comprobar ciertas condiciones y cambiar el comportamiento del programa como corresponda. Las sentencias condicionales nos dan esta capacidad. La forma más sencilla es la sentencia if:</p>
 
                         <code>
-                            if x > 0: <br>
+                            if x > 0: 
                             &nbsp;&nbsp;&nbsp;&nbsp; print "x es positivo"
                         </code>
 
@@ -289,7 +288,7 @@
                             La sintaxis para una sentencia if se ve así:</p>
 
                         <code>
-                            if EXPRESION BOOLEANA: <br>
+                            if EXPRESION BOOLEANA:
                             &nbsp;&nbsp;&nbsp;&nbsp;SENTENCIAS
 
                         </code>
@@ -311,7 +310,7 @@
                     La sintaxis del bucle while es la siguiente:</p>
 
                     <code>
-                        while condicion: <br>
+                        while condicion: 
                         &nbsp;&nbsp;&nbsp;&nbsp; cuerpo del bucle
                     </code>
                     <p>La ejecución de esta estructura de control while es la siguiente:</p>
@@ -339,26 +338,23 @@
                         La sintaxis de un bucle for es la siguiente:</p>
 
                         <code>
-                            for variable in elemento iterable (lista, cadena, range, etc.): <br>
+                            for variable in elemento iterable (lista, cadena, range, etc.): 
                             &nbsp;&nbsp;&nbsp;&nbsp;cuerpo del bucle
                         </code>
                         <p>No es necesario definir la variable de control antes del bucle, aunque se puede utilizar como variable de control una variable ya definida en el programa.</p>
 
                         <code>
-                            print("Comienzo") <br>
-                            for i in [0, 1, 2]: <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp; print("Hola ", end="") <br>
-                            print() <br>
-                            print("Final") <br>
+                            print("Comienzo")
+                            for i in [0, 1, 2]: 
+                            &nbsp;&nbsp;&nbsp;&nbsp; print("Hola ", end="") 
+                            print() 
+                            print("Final") 
                         </code>
                     </article>
                     
                 </section>
 
-                <section class="main-section" id="funciones">
-                    <header></header>
-                    
-                </section>
+                
 
 
                     
