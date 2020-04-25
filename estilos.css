@@ -54,10 +54,8 @@ body{
     margin: auto;
 } */
 #main-doc{
-      
     margin-left: 270px;
    
-
 }
 
 p{
@@ -65,6 +63,9 @@ p{
     padding-right: 15px;
 }
 
+section{
+    padding-top: 25px;
+}
 
 .main-doc li{
 
