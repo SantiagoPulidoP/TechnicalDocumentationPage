@@ -1,399 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
     <title>Python Documentation</title>
-</head>
-    <body>
-
-        <div class="container">
-            <nav id="navbar">
-                <header>
-                    Python Documentation
-                </header>
-                <ul>
-                    <li>
-                        <a href="#Introduccion">Introducción</a>
-                    </li>
-                    <li>
-                        <a href="#datos-numericos">Datos Númericos</a>
-                    </li>
-                    <li>
-                        <a href="#numeros-enteros">Numeros Enteros</a>
-                    </li>
-                    <li>
-                        <a href="#numeros-flotantes">Numeros de punto flotante</a>
-                    </li>
-                    <li>
-                        <a href="#strings">Strings</a>
-                    </li>
-                    <li>
-                        <a href="#tuplas">Tuplas</a>
-                    </li>
-                    <li>
-                        <a href="#listas">Listas</a>
-                    </li>
-                    <li>
-                        <a href="#diccionarios">Diccionarios</a>
-                    </li>
-                    <li>
-                        <a href="#if">If statement</a>
-                    </li>
-                    <li>
-                        <a href="#while">Ciclos con while</a>
-                    </li>
-                    <li>
-                        <a href="#for">Ciclo for</a>
-                    </li>
-                    
-                </ul>
-            </nav>
-            
-       
-            <main id="main-doc">
-
-                <section class="main-section" id="Introduccion">
-                    <header>
-                        <h2>Introducción</h2>
-                    </header>
-                    <article>
-                        <p> Python es un lenguaje de programación poderoso y fácil de aprender. Cuenta con estructuras de datos eficientes y de alto nivel y un enfoque simple pero efectivo a la programación orientada a objetos. La elegante sintaxis de Python y su tipado dinámico, junto con su naturaleza interpretada, hacen de éste un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en diversas áreas y sobre la mayoría de las plataformas.
-
-                        El intérprete de Python y la extensa biblioteca estándar están a libre disposición en forma binaria y de código fuente para las principales plataformas desde el sitio web de Python, <a href="https://www.python.org/" target="_blank">https://www.python.org/</a>, y puede distribuirse libremente. El mismo sitio contiene también distribuciones y enlaces de muchos módulos libres de Python de terceros, programas y herramientas, y documentación adicional..</p>
-
-                        <p>Algunas de las caracterı́sticas que lo hacen interesante para nosotros son:</p>
-                        <ul>
-                            <li>Es fácil de utilizar.</li>
-                            <li>Es un lenguaje “completo”; no sirve sólo para programar scripts.</li>
-                            <li>Tiene gran variedad de estructuras de datos incorporadas al propio lenguaje.</li>
-                            <li>Permite la programación modular, orientada a objetos y su uso como un lenguaje imperativo
-                                tradicional.</li>
-                            <li>Es interpretado. Esto facilita el desarrollo (aunque ralentice la ejecución).</li>
-                            <li>Es muy expresivo: un programa Python ocupa mucho menos que su equivalente en C.</li>
-                        </ul>
-                    </article>
-
-                </section>
-            
-                <section class="main-section" id="datos-numericos">
-                    <header><h2>Datos númericos</h2></header>
-                    <article>
-                        <p>En Python los objetos tipo número soporta enteros (normales y largos), números de punto flotante y números complejos.</p>
-                        <ul>
-
-                            <li>Todos los números en Python son "objetos inmutables", esto quiere decir que siempre que se realice una operación con un número el resultado será otro objeto número distinto.</li>
-
-                            <li>Las operaciones con números son "operaciones aritméticas".</li>
-
-                        </ul>
-                    </article>
-
-                </section>
-                
-
-                <section class="main-section" id="numeros-enteros">
-                    <header><h2>Números Enteros</h2></header>
-                    <article>
-                        <ul>
-                            <li>Un número entero puede ser decimal, octal o hexadecimal.                                                       
-                            </li>
-                            <code>
-                                1, 23, 3493          # Decimales 
-                                01, 027, 06645       # Octales  
-                                0x1, 0x17, 0xDA5     # Hexadecimales 
-                            </code>
-                            
-
-                            <li>En Python no es necesario distinguir entre enteros simples y enteros largos, pues él ya realiza el cambio cuando es necesario.
-                                Así y todo, sí podemos indicar con la letra L que va a ser un entero largo:</li>
-
-                                
-
-                        <code>
-                            1L, 23L, 3493L          # Decimales largos 
-                            01L, 027L, 06645L       # Octales largos 
-                            0x1L, 0x17L, 0xDA5L     # Hexadecimales largos  
-                        </code>
-                        <br>
-
-                        </ul>
-                    </article>
-
-                </section>
-
-
-                <section class="main-section" id="numeros-flotantes">
-                    <header><h2>Numeros de punto flotante</h2></header>
-                    <article>
-                        <ul>
-                            <li>
-                                En Python los decimales se indican con el dígito . (punto), una parte exponencial (con e o E) o ambos.
-                            </li>
-                            
-                            <code>
-                                0., 0.0, .0 
-                                1.0, 1.e0, 1.0e0 
-                            </code>
-                        </ul>
-                    </article>
-
-                </section>
-
-
-                <section class="main-section" id="strings">
-                    <header><h2>Strings</h2></header>
-                    <article>
-                        <p>Los cadenas (o strings) son un tipo de datos compuestos por secuencias de caracteres que representan texto. Estas cadenas de texto son de tipo str y se delimitan mediante el uso de comillas simples o dobles.</p>
-                        
-                        <code>
-                            >>> cadena = "Programa en Python" <br>
-                            >>> type(cadena)
-                            &lt;class 'str'&gt;
-                        </code>
-                        <p>En el caso que queramos usar comillas (o un apóstrofo) dentro de una cadena tenemos distintas opciones. La más simple es encerrar nuestra cadena mediante un tipo de comillas (simples o dobles) y usar el otro tipo dentro de la cadena. Otra opción es usar en todo momento el mismo tipo de comillas, pero usando la barra invertida (\) como carácter de escape en las comillas del interior de la cadena para indicar que esos caracteres forman parte de la cadena.</p>
-                    
-                        <code>
-                            >>> print("Decimos 'si' entre comillas") 
-                            Decimos 'si' entre comillas 
-                            >>> print('Decimos \'si\' entre comillas') 
-                            Decimos 'si' entre comillas 
-                        </code>
-                        <p>El intérprete de Python tiene incorporadas distintas funciones relacionadas con las cadenas. Una de ellas es la función len(), que nos indica el número de elementos de un objeto. En el caso de que el objeto sea una cadena nos indica el número de caracteres que la componen.</p>
-                        
-                        <code>
-                            >>> cadena = "Programa en Python"
-                            >>> len(cadena) 
-                            18 
-                        </code>
-                    </article>
-                    
-                </section>
-
-                <section class="main-section" id="tuplas"> 
-                    <header><h2>Tuplas</h2></header>
-                    <article>
-                        <p>En Python, una tupla es un conjunto ordenado e inmutable de elementos del mismo o diferente tipo.
-                        Las tuplas se representan escribiendo los elementos entre paréntesis y separados por comas.</p>
-                        
-                        <code>
-                            >>> (1, "a", 3.14)
-                            (1, 'a', 3.14)
-                        </code>
-                    </article>
-
-
-
-                    
-                </section>
-
-                <section class="main-section" id="listas">
-                    <header><h2>Listas</h2></header>
-                    <article>
-
-                        <p>Las listas son secuencias de elementos de cualquier tipo separados por comas. Para escribirlas
-                        se utiliza una secuencia de expresiones separadas por comas entre corchetes:</p>
-                        
-                        <code>
-                            >>> s=[1,1+1,6/2] 
-                            >>> s 
-                            [1, 2, 3]
-                        </code>
-                        <p>Mediante la notación para subsecuencias, es posible acceder a elementos individuales de la lista o
-                        partes de ella:</p>
-                        <code>
-                            >>> s=[1,2,3] 
-                            >>> s[1] 
-                            2 
-                            >>> s[1:-1] 
-                            [2] 
-    
-                        </code>
-                    </article>
-                    
-                </section>
-
-                <section class="main-section" id="diccionarios">
-                    <header><h2>Diccionarios</h2></header>
-                    <article>
-                        <p>Python permite utilizar diccionarios (también llamados vectores asociativos). Estos funcionan
-                        como vectores normales en los que los ı́ndices pueden ser cualquier tipo de objeto inmutable
-                        (números, cadenas y tuplas cuyos componentes sean inmutables). Esto es especialmente útil para
-                        aquellos casos en los que la información se indexa de forma natural mediante cadenas.
-                        El diccionario vacı́o se crea mediante {}. Para añadir elementos basta con hacer las correspon-
-                        dientes asignaciones. Después se puede recuperar cualquier elemento a partir de la clave:
-                        </p>
-
-                        <code>
-                            >>>tel={} 
-                            >>>tel["luis"]=1234
-                            >>>tel["maria"]=3456 
-                            >>>tel["pepe"]=2323 
-                            >>> print tel["maria"] 
-                            3456 
-                            >>> tel 
-                            {’luis’: 1234, ’pepe’: 2323, ’maria’: 3456}
-                        </code>
-
-                        <p>Es un error intentar recuperar la información a partir de una clave que no esté en el diccionario.
-                        Para evitarlo, se puede utilizar el método has_key(), que devuelve True si la clave está y False
-                        en caso contrario. Además, puedes utilizar el método keys() para obtener la lista de claves del
-                        diccionario.</p>
-
-                        <code>
-                            >>> tel.has_key("pepe") 
-                            True 
-                            >>> tel.has_key("antonio") 
-                            False 
-                            >>> tel.keys() 
-                            [’luis’, ’pepe’, ’maria’]
-                        </code>
-
-                        <p>Otra alternativa es utilizar get. Este método recibe dos parámetros: el primero es la clave que
-                        se va a buscar y el segundo el valor que se devolverá en caso de que no se encuentre. Si no se
-                        especifica el segundo parámetro, el valor devuelto al no encontrar la clave es None.</p>
-
-                        <code>
-                            >>> tel.get(’maria’, 0) 
-                            3456 
-                            >>> tel.get(’ines’, 0)
-                            0 
-                            >>> tel.get(’maria’)
-                            3456 
-                            >>> print tel.get(’ines’) 
-                            None
-                        </code>
-
-
-                    </article>
-
-                
-                    
-                </section>
-
-                <section class="main-section" id="if">
-                    <header><h2>If statement</h2></header>
-                    <article>
-                        <p>Para escribir programas útiles, casi siempre necesitamos la capacidad de comprobar ciertas condiciones y cambiar el comportamiento del programa como corresponda. Las sentencias condicionales nos dan esta capacidad. La forma más sencilla es la sentencia if:</p>
-
-                        <code>
-                            if x > 0: 
-                            &nbsp;&nbsp;&nbsp;&nbsp; print "x es positivo"
-                        </code>
-
-                        <p>La expresión que sigue a la sentencia if se llama condición. Si es verdadera, entonces la sentencia sangrada se ejecuta. Si no lo es, no pasa nada.
-
-                            La sintaxis para una sentencia if se ve así:</p>
-
-                        <code>
-                            if EXPRESION BOOLEANA:
-                            &nbsp;&nbsp;&nbsp;&nbsp;SENTENCIAS
-
-                        </code>
-                        <p>Así como la definición de función del capítulo anterior y otras sentencias compuestas, la sentencia if consiste de un encabezado y un cuerpo. El encabezado empieza con la palabra reservada if seguida por una expresión booleana y termina con dos puntos (:).
-
-                            Al conjunto de sentencias sangradas que siguen se le llama bloque. La primera sentencia no sangrada marca el fin del bloque. Un bloque de sentencias dentro de una sentencia compuesta recibe el nombre de cuerpo de la sentencia.
-                            
-                            Cada una de las sentencias dentro del cuerpo se ejecuta en orden si la expresión booleana produce el valor True. El bloque completo es ignorado si la expresión booleana produce el valor False.
-                            
-                            No hay límite en el número de sentencias que puede aparecer en el cuerpo de una sentencia if, pero debe haber al menos una. A veces, es útil tener un cuerpo sin sentencias (normalmente como reserva de espacio para código que todavía no ha escrito). En ese caso puede usar la sentencia pass, que no hace nada.</p>
-                    </article>
-                    
-                </section>
-
-                <section class="main-section" id="while">
-                    <header><h2>Ciclo While</h2></header>
-                    <p>Un bucle while permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (es decir, mientras la condición tenga el valor True).
-
-                    La sintaxis del bucle while es la siguiente:</p>
-
-                    <code>
-                        while condicion: 
-                        &nbsp;&nbsp;&nbsp;&nbsp; cuerpo del bucle
-                    </code>
-                    <p>La ejecución de esta estructura de control while es la siguiente:</p>
-                    <ul>
-                        <li>Python evalúa la condición:
-                            <ul>
-                                <li>
-                                    si el resultado es True se ejecuta el cuerpo del bucle. Una vez ejecutado el cuerpo del bucle, se repite el proceso (se evalúa de nuevo la condición y, si es cierta, se ejecuta de nuevo el cuerpo del bucle) una y otra vez mientras la condición sea cierta.
-                                </li>
-                                <li>
-                                    si el resultado es False, el cuerpo del bucle no se ejecuta y continúa la ejecución del resto del programa
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p>La variable o las variables que aparezcan en la condición se suelen llamar variables de control. Las variables de control deben definirse antes del bucle while y modificarse en el bucle while.</p>
-                    
-                </section>
-
-                <section class="main-section" id="for">
-                    <header><h2>Ciclo for</h2></header>
-                    <article>
-                        <p>En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle for es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar iteración.
-                        <br>
-                        La sintaxis de un bucle for es la siguiente:</p>
-
-                        <code>
-                            for variable in elemento iterable (lista, cadena, range, etc.): 
-                            &nbsp;&nbsp;&nbsp;&nbsp;cuerpo del bucle
-                        </code>
-                        <p>No es necesario definir la variable de control antes del bucle, aunque se puede utilizar como variable de control una variable ya definida en el programa.</p>
-
-                        <code>
-                            print("Comienzo")
-                            for i in [0, 1, 2]: 
-                            &nbsp;&nbsp;&nbsp;&nbsp; print("Hola ", end="") 
-                            print() 
-                            print("Final") 
-                        </code>
-                    </article>
-                    
-                </section>
-
-                
-
-
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </main>
-
-
-
-
-         </div>
-
-
-
-
-        
-    </body>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <header>
+          Python Documentation
+        </header>
+        <ul>
+          <li>
+            <a href="#Introduccion">Introducción</a>
+          </li>
+          <li>
+            <a href="#datos-numericos">Datos Númericos</a>
+          </li>
+          <li>
+            <a href="#numeros-enteros">Numeros Enteros</a>
+          </li>
+          <li>
+            <a href="#numeros-flotantes">Numeros de punto flotante</a>
+          </li>
+          <li>
+            <a href="#strings">Strings</a>
+          </li>
+          <li>
+            <a href="#tuplas">Tuplas</a>
+          </li>
+          <li>
+            <a href="#listas">Listas</a>
+          </li>
+          <li>
+            <a href="#diccionarios">Diccionarios</a>
+          </li>
+          <li>
+            <a href="#if">If statement</a>
+          </li>
+          <li>
+            <a href="#while">Ciclos con while</a>
+          </li>
+          <li>
+            <a href="#for">Ciclo for</a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+          <header>
+            <h2>Introducción</h2>
+          </header>
+          <article>
+            <p>
+              Python es un lenguaje de programación poderoso y fácil de
+              aprender. Cuenta con estructuras de datos eficientes y de alto
+              nivel y un enfoque simple pero efectivo a la programación
+              orientada a objetos. La elegante sintaxis de Python y su tipado
+              dinámico, junto con su naturaleza interpretada, hacen de éste un
+              lenguaje ideal para scripting y desarrollo rápido de aplicaciones
+              en diversas áreas y sobre la mayoría de las plataformas. El
+              intérprete de Python y la extensa biblioteca estándar están a
+              libre disposición en forma binaria y de código fuente para las
+              principales plataformas desde el sitio web de Python,
+              <a href="https://www.python.org/" target="_blank"
+                >https://www.python.org/</a
+              >, y puede distribuirse libremente. El mismo sitio contiene
+              también distribuciones y enlaces de muchos módulos libres de
+              Python de terceros, programas y herramientas, y documentación
+              adicional..
+            </p>
+
+            <p>
+              Algunas de las caracterı́sticas que lo hacen interesante para
+              nosotros son:
+            </p>
+            <ul>
+              <li>Es fácil de utilizar.</li>
+              <li>
+                Es un lenguaje “completo”; no sirve sólo para programar scripts.
+              </li>
+              <li>
+                Tiene gran variedad de estructuras de datos incorporadas al
+                propio lenguaje.
+              </li>
+              <li>
+                Permite la programación modular, orientada a objetos y su uso
+                como un lenguaje imperativo tradicional.
+              </li>
+              <li>
+                Es interpretado. Esto facilita el desarrollo (aunque ralentice
+                la ejecución).
+              </li>
+              <li>
+                Es muy expresivo: un programa Python ocupa mucho menos que su
+                equivalente en C.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="datos-numericos">
+          <header><h2>Datos númericos</h2></header>
+          <article>
+            <p>
+              En Python los objetos tipo número soporta enteros (normales y
+              largos), números de punto flotante y números complejos.
+            </p>
+            <ul>
+              <li>
+                Todos los números en Python son "objetos inmutables", esto
+                quiere decir que siempre que se realice una operación con un
+                número el resultado será otro objeto número distinto.
+              </li>
+
+              <li>
+                Las operaciones con números son "operaciones aritméticas".
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="numeros-enteros">
+          <header><h2>Números Enteros</h2></header>
+          <article>
+            <ul>
+              <li>Un número entero puede ser decimal, octal o hexadecimal.</li>
+              <code>
+                1, 23, 3493 # Decimales 01, 027, 06645 # Octales 0x1, 0x17,
+                0xDA5 # Hexadecimales
+              </code>
+
+              <li>
+                En Python no es necesario distinguir entre enteros simples y
+                enteros largos, pues él ya realiza el cambio cuando es
+                necesario. Así y todo, sí podemos indicar con la letra L que va
+                a ser un entero largo:
+              </li>
+
+              <code>
+                1L, 23L, 3493L # Decimales largos 01L, 027L, 06645L # Octales
+                largos 0x1L, 0x17L, 0xDA5L # Hexadecimales largos
+              </code>
+              <br />
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="numeros-flotantes">
+          <header><h2>Numeros de punto flotante</h2></header>
+          <article>
+            <ul>
+              <li>
+                En Python los decimales se indican con el dígito . (punto), una
+                parte exponencial (con e o E) o ambos.
+              </li>
+
+              <code>
+                0., 0.0, .0 1.0, 1.e0, 1.0e0
+              </code>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="strings">
+          <header><h2>Strings</h2></header>
+          <article>
+            <p>
+              Los cadenas (o strings) son un tipo de datos compuestos por
+              secuencias de caracteres que representan texto. Estas cadenas de
+              texto son de tipo str y se delimitan mediante el uso de comillas
+              simples o dobles.
+            </p>
+
+            <code>
+              >>> cadena = "Programa en Python" <br />
+              >>> type(cadena) &lt;class 'str'&gt;
+            </code>
+            <p>
+              En el caso que queramos usar comillas (o un apóstrofo) dentro de
+              una cadena tenemos distintas opciones. La más simple es encerrar
+              nuestra cadena mediante un tipo de comillas (simples o dobles) y
+              usar el otro tipo dentro de la cadena. Otra opción es usar en todo
+              momento el mismo tipo de comillas, pero usando la barra invertida
+              (\) como carácter de escape en las comillas del interior de la
+              cadena para indicar que esos caracteres forman parte de la cadena.
+            </p>
+
+            <code>
+              >>> print("Decimos 'si' entre comillas") Decimos 'si' entre
+              comillas >>> print('Decimos \'si\' entre comillas') Decimos 'si'
+              entre comillas
+            </code>
+            <p>
+              El intérprete de Python tiene incorporadas distintas funciones
+              relacionadas con las cadenas. Una de ellas es la función len(),
+              que nos indica el número de elementos de un objeto. En el caso de
+              que el objeto sea una cadena nos indica el número de caracteres
+              que la componen.
+            </p>
+
+            <code>
+              >>> cadena = "Programa en Python" >>> len(cadena) 18
+            </code>
+          </article>
+        </section>
+
+        <section class="main-section" id="tuplas">
+          <header><h2>Tuplas</h2></header>
+          <article>
+            <p>
+              En Python, una tupla es un conjunto ordenado e inmutable de
+              elementos del mismo o diferente tipo. Las tuplas se representan
+              escribiendo los elementos entre paréntesis y separados por comas.
+            </p>
+
+            <code>
+              >>> (1, "a", 3.14) (1, 'a', 3.14)
+            </code>
+          </article>
+        </section>
+
+        <section class="main-section" id="listas">
+          <header><h2>Listas</h2></header>
+          <article>
+            <p>
+              Las listas son secuencias de elementos de cualquier tipo separados
+              por comas. Para escribirlas se utiliza una secuencia de
+              expresiones separadas por comas entre corchetes:
+            </p>
+
+            <code>
+              >>> s=[1,1+1,6/2] >>> s [1, 2, 3]
+            </code>
+            <p>
+              Mediante la notación para subsecuencias, es posible acceder a
+              elementos individuales de la lista o partes de ella:
+            </p>
+            <code>
+              >>> s=[1,2,3] >>> s[1] 2 >>> s[1:-1] [2]
+            </code>
+          </article>
+        </section>
+
+        <section class="main-section" id="diccionarios">
+          <header><h2>Diccionarios</h2></header>
+          <article>
+            <p>
+              Python permite utilizar diccionarios (también llamados vectores
+              asociativos). Estos funcionan como vectores normales en los que
+              los ı́ndices pueden ser cualquier tipo de objeto inmutable
+              (números, cadenas y tuplas cuyos componentes sean inmutables).
+              Esto es especialmente útil para aquellos casos en los que la
+              información se indexa de forma natural mediante cadenas. El
+              diccionario vacı́o se crea mediante {}. Para añadir elementos basta
+              con hacer las correspon- dientes asignaciones. Después se puede
+              recuperar cualquier elemento a partir de la clave:
+            </p>
+
+            <code>
+              >>>tel={} >>>tel["luis"]=1234 >>>tel["maria"]=3456
+              >>>tel["pepe"]=2323 >>> print tel["maria"] 3456 >>> tel {’luis’:
+              1234, ’pepe’: 2323, ’maria’: 3456}
+            </code>
+
+            <p>
+              Es un error intentar recuperar la información a partir de una
+              clave que no esté en el diccionario. Para evitarlo, se puede
+              utilizar el método has_key(), que devuelve True si la clave está y
+              False en caso contrario. Además, puedes utilizar el método keys()
+              para obtener la lista de claves del diccionario.
+            </p>
+
+            <code>
+              >>> tel.has_key("pepe") True >>> tel.has_key("antonio") False >>>
+              tel.keys() [’luis’, ’pepe’, ’maria’]
+            </code>
+
+            <p>
+              Otra alternativa es utilizar get. Este método recibe dos
+              parámetros: el primero es la clave que se va a buscar y el segundo
+              el valor que se devolverá en caso de que no se encuentre. Si no se
+              especifica el segundo parámetro, el valor devuelto al no encontrar
+              la clave es None.
+            </p>
+
+            <code>
+              >>> tel.get(’maria’, 0) 3456 >>> tel.get(’ines’, 0) 0 >>>
+              tel.get(’maria’) 3456 >>> print tel.get(’ines’) None
+            </code>
+          </article>
+        </section>
+
+        <section class="main-section" id="if">
+          <header><h2>If statement</h2></header>
+          <article>
+            <p>
+              Para escribir programas útiles, casi siempre necesitamos la
+              capacidad de comprobar ciertas condiciones y cambiar el
+              comportamiento del programa como corresponda. Las sentencias
+              condicionales nos dan esta capacidad. La forma más sencilla es la
+              sentencia if:
+            </p>
+
+            <code>
+              if x > 0: &nbsp;&nbsp;&nbsp;&nbsp; print "x es positivo"
+            </code>
+
+            <p>
+              La expresión que sigue a la sentencia if se llama condición. Si es
+              verdadera, entonces la sentencia sangrada se ejecuta. Si no lo es,
+              no pasa nada. La sintaxis para una sentencia if se ve así:
+            </p>
+
+            <code>
+              if EXPRESION BOOLEANA: &nbsp;&nbsp;&nbsp;&nbsp;SENTENCIAS
+            </code>
+            <p>
+              Así como la definición de función del capítulo anterior y otras
+              sentencias compuestas, la sentencia if consiste de un encabezado y
+              un cuerpo. El encabezado empieza con la palabra reservada if
+              seguida por una expresión booleana y termina con dos puntos (:).
+              Al conjunto de sentencias sangradas que siguen se le llama bloque.
+              La primera sentencia no sangrada marca el fin del bloque. Un
+              bloque de sentencias dentro de una sentencia compuesta recibe el
+              nombre de cuerpo de la sentencia. Cada una de las sentencias
+              dentro del cuerpo se ejecuta en orden si la expresión booleana
+              produce el valor True. El bloque completo es ignorado si la
+              expresión booleana produce el valor False. No hay límite en el
+              número de sentencias que puede aparecer en el cuerpo de una
+              sentencia if, pero debe haber al menos una. A veces, es útil tener
+              un cuerpo sin sentencias (normalmente como reserva de espacio para
+              código que todavía no ha escrito). En ese caso puede usar la
+              sentencia pass, que no hace nada.
+            </p>
+          </article>
+        </section>
+
+        <section class="main-section" id="while">
+          <header><h2>Ciclo While</h2></header>
+          <p>
+            Un bucle while permite repetir la ejecución de un grupo de
+            instrucciones mientras se cumpla una condición (es decir, mientras
+            la condición tenga el valor True). La sintaxis del bucle while es la
+            siguiente:
+          </p>
+
+          <code>
+            while condicion: &nbsp;&nbsp;&nbsp;&nbsp; cuerpo del bucle
+          </code>
+          <p>
+            La ejecución de esta estructura de control while es la siguiente:
+          </p>
+          <ul>
+            <li>
+              Python evalúa la condición:
+              <ul>
+                <li>
+                  si el resultado es True se ejecuta el cuerpo del bucle. Una
+                  vez ejecutado el cuerpo del bucle, se repite el proceso (se
+                  evalúa de nuevo la condición y, si es cierta, se ejecuta de
+                  nuevo el cuerpo del bucle) una y otra vez mientras la
+                  condición sea cierta.
+                </li>
+                <li>
+                  si el resultado es False, el cuerpo del bucle no se ejecuta y
+                  continúa la ejecución del resto del programa
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            La variable o las variables que aparezcan en la condición se suelen
+            llamar variables de control. Las variables de control deben
+            definirse antes del bucle while y modificarse en el bucle while.
+          </p>
+        </section>
+
+        <section class="main-section" id="for">
+          <header><h2>Ciclo for</h2></header>
+          <article>
+            <p>
+              En general, un bucle es una estructura de control que repite un
+              bloque de instrucciones. Un bucle for es un bucle que repite el
+              bloque de instrucciones un número prederminado de veces. El bloque
+              de instrucciones que se repite se suele llamar cuerpo del bucle y
+              cada repetición se suele llamar iteración.
+              <br />
+              La sintaxis de un bucle for es la siguiente:
+            </p>
+
+            <code>
+              for variable in elemento iterable (lista, cadena, range, etc.):
+              &nbsp;&nbsp;&nbsp;&nbsp;cuerpo del bucle
+            </code>
+            <p>
+              No es necesario definir la variable de control antes del bucle,
+              aunque se puede utilizar como variable de control una variable ya
+              definida en el programa.
+            </p>
+
+            <code>
+              print("Comienzo") for i in [0, 1, 2]: &nbsp;&nbsp;&nbsp;&nbsp;
+              print("Hola ", end="") print() print("Final")
+            </code>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
